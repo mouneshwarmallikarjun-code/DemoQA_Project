@@ -1,0 +1,20 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MySuite"  thread-count="0"> <!-- parallel="classes" -->
+    <test name="MyTest">
+        <groups>
+            <run>
+                <include name="SmokeTest"></include>  <!-- We can execute "SmokeTest" or "Regression" -->
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.all.Selenium4NewLocators"></class>
+             <class name="org.example.apachePOI.ReadSheet"/>
+            <class name="org.example.apachePOI.ExcelReader"/>
+            <class name="org.example.autosuggestion.AutoSuggestions"/>
+            <class name="org.example.checkboxradiobtn.CheckBoxAndRadioBtns"/>
+<!--            <class name="org.example.webtable.Practice"/>-->
+<!--            <class name="org.example.webtable.WebTableDemo"/>-->
+        </classes>
+    </test>
+</suite>

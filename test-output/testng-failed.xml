@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DemoQA_Project(failed)">
+    <classes>
+      <class name="org.example.all.AllValidationAtOne">
+        <methods>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- org.example.AllValidationAtOne -->
+      <class name="org.example.tooltip.ToolTipDemo">
+        <methods>
+          <include name="test5"/>
+        </methods>
+      </class> <!-- org.example.ToolTip -->
+    </classes>
+  </test> <!-- DemoQA_Project(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

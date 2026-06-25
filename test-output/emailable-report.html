@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default Suite</th></tr>
+<tr><td><a href="#t0">DemoQA_Project</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">102,169</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">DemoQA_Project &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.example.all.AllValidationAtOne</td><td><a href="#m0">test4</a></td><td rowspan="1">1767111636628</td><td rowspan="1">56787</td></tr><tr class="failedodd"><td rowspan="1">org.example.tooltip.ToolTipDemo</td><td><a href="#m1">test5</a></td><td rowspan="1">1767111693434</td><td rowspan="1">6803</td></tr><tr><th colspan="4">DemoQA_Project &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.example.autosuggestion.AutoSuggestions</td><td><a href="#m2">test1</a></td><td rowspan="1">1767111598119</td><td rowspan="1">10763</td></tr><tr class="passedodd"><td rowspan="1">org.example.checkboxradiobtn.CheckBoxAndRadioBtns</td><td><a href="#m3">test2</a></td><td rowspan="1">1767111608891</td><td rowspan="1">15993</td></tr><tr class="passedeven"><td rowspan="1">org.example.propertyfiles.PropertiesFiles</td><td><a href="#m4">test3</a></td><td rowspan="1">1767111624889</td><td rowspan="1">11739</td></tr></tbody>
+</table>
+<h2>DemoQA_Project</h2><h3 id="m0">org.example.SampleTest#test4</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException:
+    element click intercepted: Element &lt;button id=&quot;tabButton&quot; type=&quot;button&quot; class=&quot;btn
+    btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (380, 541). Other element would receive the click:
+    &lt;iframe id=&quot;google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0&quot; name=&quot;google_ads_iframe_/21849154601,22343295815/Ad.Plus-Anchor_0&quot;
+    title=&quot;3rd party ad content&quot; width=&quot;970&quot; height=&quot;100&quot; scrolling=&quot;no&quot;
+    marginwidth=&quot;0&quot; marginheight=&quot;0&quot; frameborder=&quot;0&quot; aria-label=&quot;Advertisement&quot;
+    tabindex=&quot;0&quot; allow=&quot;private-state-token-redemption;attribution-reporting&quot; data-load-complete=&quot;true&quot;
+    style=&quot;border: 0px; vertical-align: bottom;&quot; data-google-container-id=&quot;1&quot;&gt;&lt;/iframe&gt;
+    (Session info: chrome=142.0.7444.176)
+    Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+    System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+    java.version: &apos;23.0.1&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [3490a4ba11d30e2ad5f1023f644243bb, clickElement
+    {id=f.3DCA12636363787D847B674139D5AC30.d.9B2FEB9FBAEDA905DEA075E1AFD29B12.e.1227}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome:
+    {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\2445477\AppData\Lo...}, fedcm:accounts:
+    true, goog:chromeOptions: {debuggerAddress: localhost:63680}, goog:processID: 29784, networkConnectionEnabled:
+    false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63680/devtoo...,
+    se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0,
+    pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true,
+    webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true,
+    webauthn:virtualAuthenticators: true}
+    Element: [[ChromeDriver: chrome on windows (3490a4ba11d30e2ad5f1023f644243bb)] -&gt; xpath: //button[text()=&apos;New
+    Tab&apos;]]
+    Session ID: 3490a4ba11d30e2ad5f1023f644243bb
+    at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+    at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+    at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+    at org.example.all.AllValidationAtOne.test4(SampleTest.java:231)
+    at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+    at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+    at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+    ... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.example.ToolTip#test5</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException:
+    no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#age&quot;}
+    (Session info: chrome=142.0.7444.176)
+    For documentation on this error, please visit:
+    https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+    Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+    System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;,
+    java.version: &apos;23.0.1&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [bccdeebe0202aeea4621b167823b4f48, findElement {value=age, using=id}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome:
+    {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\2445477\AppData\Lo...}, fedcm:accounts:
+    true, goog:chromeOptions: {debuggerAddress: localhost:60704}, goog:processID: 28440, networkConnectionEnabled:
+    false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60704/devtoo...,
+    se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0,
+    pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true,
+    webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: bccdeebe0202aeea4621b167823b4f48
+    at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+    at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+    at org.example.tooltip.ToolTipDemo.test5(ToolTip.java:21)
+    at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+    at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+    at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+    ... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.example.AutoSuggestions#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">org.example.CheckBoxAndRadioBtns#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">org.example.PropertiesFiles#test3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
