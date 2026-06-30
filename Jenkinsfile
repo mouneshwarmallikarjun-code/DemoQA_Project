@@ -5,9 +5,14 @@ pipeline {
         stage('Verify Workspace') {
             steps {
                 echo "Code is already checked out by Jenkins"
-                dir('.') {
-                    bat 'dir'
-                }
+                bat 'dir'
+            }
+        }
+
+        stage('Check Java and Maven') {
+            steps {
+                bat 'java -version'
+                bat 'mvn -version'
             }
         }
 
