@@ -22,10 +22,24 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Run TestNG Tests') {
             steps {
-                bat 'mvn test'
+                bat 'mvn test -DsuiteXmlFile=testng.xml'
             }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline execution completed'
+        }
+
+        success {
+            echo 'Build and tests executed successfully'
+        }
+
+        failure {
+            echo 'Build failed. Please check Maven/JDK/certificate configuration.'
         }
     }
 }
