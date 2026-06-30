@@ -2,17 +2,24 @@ pipeline {
     agent any
 
     stages {
+        stage('Verify Workspace') {
+            steps {
+                echo "Code is already checked out by Jenkins"
+                dir('.') {
+                    bat 'dir'
+                }
+            }
+        }
+
         stage('Build') {
             steps {
-                echo 'Building the project...'
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running tests...'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
     }
