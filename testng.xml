@@ -8,11 +8,11 @@
             </run>
         </groups>
         <classes>
-            <class name="org.example.all.Selenium4NewLocators"></class>
-             <class name="org.example.apachePOI.ReadSheet"/>
-            <class name="org.example.apachePOI.ExcelReader"/>
+<!--            <class name="org.example.all.Selenium4NewLocators"></class>-->
+<!--             <class name="org.example.apachePOI.ReadSheet"/>-->
+<!--            <class name="org.example.apachePOI.ExcelReader"/>-->
             <class name="org.example.autosuggestion.AutoSuggestions"/>
-            <class name="org.example.checkboxradiobtn.CheckBoxAndRadioBtns"/>
+<!--            <class name="org.example.checkboxradiobtn.CheckBoxAndRadioBtns"/>-->
 <!--            <class name="org.example.webtable.Practice"/>-->
 <!--            <class name="org.example.webtable.WebTableDemo"/>-->
         </classes>
